@@ -43,7 +43,7 @@ body {
   font-weight: bold;
 }
 
-.search-button:focus {
+.search-button:active {
   background-color: #4f86a8;
 }
 
