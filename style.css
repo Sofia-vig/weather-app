@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-  margin: 33px auto 26px auto;
+  margin: 16px auto 26px auto;
 }
 
 .search-form {
@@ -81,7 +81,7 @@ body {
 }
 
 .content-days-after {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
