@@ -1,19 +1,3 @@
-function getDataWeather(city) {
-  fetch(
-    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=30d058d11c526c857ca0474cca542f93`
-  )
-    .then((response) => {
-      return response.json();
-    })
-    .then((json) => {
-      divWeatherInfo(json);
-      const arrayDays = [5, 13, 21];
-      arrayDays.forEach((item) => {
-        itemWeather(json.list, item);
-      });
-    });
-}
-
 //Div principal contenido clima
 function divWeatherInfo(json) {
   //Titulo
@@ -54,12 +38,28 @@ function itemWeather(json, item) {
   //Fecha
   const arrayCortado = json[item].dt_txt.split(" ")[0];
   const resuArray = arrayCortado.split("-").reverse();
-  template.content.querySelector(".day-date").textContent =
-    resuArray[0] + "/" + resuArray[1];
+  const day = resuArray[0] + "/" + resuArray[1];
+  template.content.querySelector(".day-date").textContent = day;
 
   //Clonar
   var clone = document.importNode(template.content, true);
   container.appendChild(clone);
+}
+
+function getDataWeather(city) {
+  fetch(
+    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=30d058d11c526c857ca0474cca542f93`
+  )
+    .then((response) => {
+      return response.json();
+    })
+    .then((json) => {
+      divWeatherInfo(json);
+      const arrayDays = [5, 13, 21];
+      arrayDays.forEach((item) => {
+        itemWeather(json.list, item);
+      });
+    });
 }
 
 function main() {
