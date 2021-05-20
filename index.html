@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script async src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <!--Input busqueda-->
+      <form class="search-form">
+        <input
+          type="text"
+          class="search-city"
+          placeholder="Busca una ciudad"
+          name="search"
+        />
+        <input type="submit" class="search-button" />
+      </form>
+    </header>
+    <section class="content">
+      <!--Contenido clima-->
+      <div class="weather-content">
+        <!--Ciudad-->
+        <h2 class="weather-title-city">Rio Cuarto</h2>
+        <!--Hoy-->
+        <h4 class="weather-subtitle-day">Hoy</h4>
+        <!--Logo sol-->
+        <img src="src/sol1.png" alt="" class="logo-weather" />
+        <!--Grados-->
+        <h2 class="wather-degrees">27°C</h2>
+      </div>
+    </section>
+    <!--Contenedor items-->
+    <div class="content-days-after"></div>
+    <template class="template-day-after">
+      <div class="item-day">
+        <!--Logo nubes-->
+        <img src="" alt="" class="logo-day" />
+        <!--Grados item-->
+        <h5 class="day-degrees"></h5>
+        <!--Date item-->
+        <h6 class="day-date"></h6>
+      </div>
+    </template>
+  </body>
+</html>
