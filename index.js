@@ -1,5 +1,6 @@
 //Div principal contenido clima
 function divWeatherInfo(json) {
+  console.log(json);
   //Titulo
   const titleEl = document.querySelector(".weather-title-city");
   titleEl.textContent = json.city.name;
@@ -55,7 +56,7 @@ function getDataWeather(city) {
     })
     .then((json) => {
       divWeatherInfo(json);
-      const arrayDays = [5, 13, 21];
+      const arrayDays = [6, 15, 23];
       document.querySelector(".content-days-after").innerHTML = "";
       arrayDays.forEach((item) => {
         itemWeather(json.list, item);
