@@ -26,7 +26,7 @@ body {
   border: white;
   border-radius: 10px;
   padding: 0 10px;
-  background-color: #f1faee;
+  background-color: #ffffff;
   color: #1d3557;
   font-weight: bold;
   font-size: 17px;
@@ -34,10 +34,9 @@ body {
 
 .search-button {
   margin-left: 3px;
-  background-color: white;
+  background-color: #ffffff;
   border: none;
   border-radius: 8px;
-  color: white;
   height: 100%;
   color: #457b9d;
   font-size: 15px;
