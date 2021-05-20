@@ -23,7 +23,7 @@ body {
 .search-city {
   height: 100%;
   width: 100%;
-  border: white;
+  border: 1px solid white;
   border-radius: 10px;
   padding: 0 10px;
   background-color: #ffffff;
@@ -32,15 +32,20 @@ body {
   font-size: 17px;
 }
 
+.search-city::placeholder {
+  color: #1d3557;
+}
+
 .search-button {
   margin-left: 3px;
   background-color: #ffffff;
   border: none;
   border-radius: 8px;
   height: 100%;
-  color: #457b9d;
-  font-size: 15px;
+  color: #1d3557;
+  font-size: 16px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .search-button:active {
