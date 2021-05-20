@@ -90,8 +90,8 @@ body {
   width: 110px;
   height: 110px;
   background-color: #f1faee;
-  margin-right: 8px;
   border-radius: 10px;
+  margin: 0 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
