@@ -1,7 +1,6 @@
 //Div principal contenido clima
 function divWeatherInfo(json) {
-  console.log(json);
-  //Titulo
+  //Title
   const titleEl = document.querySelector(".weather-title-city");
   titleEl.textContent = json.city.name;
 
@@ -9,7 +8,7 @@ function divWeatherInfo(json) {
   const logoEl = document.querySelector(".logo-weather");
   const cloud = json.list[0].clouds.all;
   if (cloud < 50) {
-    logoEl.src = "src/sol1.png";
+    logoEl.src = "src/sun1.png";
   } else {
     logoEl.src = "src/cloud1.png";
   }
@@ -31,7 +30,7 @@ function itemWeather(json, item) {
   //Imagen
   const clouds = json[item].clouds.all;
   if (clouds < 50) {
-    template.content.querySelector(".logo-day").src = "src/sol1.png";
+    template.content.querySelector(".logo-day").src = "src/sun1.png";
   } else {
     template.content.querySelector(".logo-day").src = "src/cloud1.png";
   }
@@ -66,7 +65,6 @@ function getDataWeather(city) {
 
 function main() {
   const searchElement = document.querySelector(".search-form");
-  const buttonElement = document.querySelector(".search-button");
 
   searchElement.addEventListener("submit", (event) => {
     event.preventDefault();

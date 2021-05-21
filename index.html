@@ -5,51 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <script async src="index.js"></script>
-
+    <link rel="stylesheet" href="style.css" />
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!--Header-->
     <header class="header">
-      <!--Input busqueda-->
       <form class="search-form">
         <input
           type="text"
           class="search-city"
-          placeholder="Ingresa la ciudad"
+          placeholder="City"
           name="search"
         />
-
-        <input type="submit" class="search-button" value="Buscar" />
+        <input type="submit" class="search-button" value="Search" />
       </form>
     </header>
+
+    <!--Content weather-->
     <section class="content">
-      <!--Contenido clima-->
       <div class="weather-content">
-        <!--Ciudad-->
         <h2 class="weather-title-city">Ciudad</h2>
-        <!--Hoy-->
-        <h4 class="weather-subtitle-day">Hoy</h4>
-        <!--Logo sol-->
-        <img src="src/sol1.png" alt="" class="logo-weather" />
-        <!--Grados-->
+        <h4 class="weather-subtitle-day">Today</h4>
+        <img src="src/sun1.png" alt="" class="logo-weather" />
         <h2 class="wather-degrees">Temp°C</h2>
       </div>
     </section>
-    <!--Contenedor items-->
+
+    <!--Container items-->
     <div class="content-days-after"></div>
+
+    <!--Template items-->
     <template class="template-day-after">
       <div class="item-day">
-        <!--Logo nubes-->
         <img src="" alt="" class="logo-day" />
-        <!--Grados item-->
         <h5 class="day-degrees"></h5>
-        <!--Date item-->
         <h6 class="day-date"></h6>
       </div>
     </template>

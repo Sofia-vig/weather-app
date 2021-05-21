@@ -8,6 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/*Header & Form*/
 .header {
   margin: 16px auto 26px auto;
 }
@@ -52,6 +53,7 @@ body {
   background-color: #4f86a8;
 }
 
+/*Main content*/
 .weather-content {
   width: 280px;
   height: 390px;
@@ -63,9 +65,11 @@ body {
   align-items: center;
   color: white;
 }
+
 .weather-title-city {
   font-size: 40px;
   margin: 20px 0 6px 0;
+  text-align: center;
 }
 
 .weather-subtitle-day {
@@ -84,6 +88,7 @@ body {
   margin: 20px 0 21px 0;
 }
 
+/*Days after content*/
 .content-days-after {
   margin-top: 20px;
   display: flex;
